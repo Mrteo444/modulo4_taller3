@@ -1,0 +1,28 @@
+
+<form (ngSubmit)="registro(formulario)" #formulario="ngForm">
+    <label> Registro</label>
+   
+
+    
+    <label>Ingrese email</label>
+    <input type="email" placeholder="Ej: Juan@Pérez"  name="email" [(ngModel)]="email">
+
+
+    <label>Ingrese Nombre</label>
+    
+    <label>Ingrese tipo de suarios</label>
+    <select name="usuario"[(ngModel)]="usuario">
+        <option value="admin" >admin</option>
+        <option value="persona" >cleinte</option>
+    </select>
+    
+    <label>Ingrese contrseña</label>
+    <input type="password" placeholder="Ej: 25" name="password" [(ngModel)]="password">
+    
+  <br>
+  <br>
+  <br>
+   
+
+    <button type="submit">Enviar</button>
+</form>

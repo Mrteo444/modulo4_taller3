@@ -1,0 +1,43 @@
+/* Centrar los elementos dentro de la fila */
+.row {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 20px;
+  }
+  
+  /* Alinear y dar estilo al contenedor */
+  .col-md-3 {
+    display: flex;
+    justify-content: center; /* Centrar el contenedor */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 105px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.05); /* Escala al hacer hover */
+  }
+  
+  .thumbnail img {
+    max-width: 300%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+  }
+  
+  .caption h2, .caption h3 {
+    text-align: center; /* Centrar el texto */
+    margin: 10px 0;
+  }
+  
